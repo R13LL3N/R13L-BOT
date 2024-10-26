@@ -1,0 +1,124 @@
+2024-10-26 06:23:24,715 - logging in using static token
+2024-10-26 06:23:27,998 - Shard ID None has connected to Gateway (Session ID: c12e1599ebcbd9161894871685eb1af0).
+2024-10-26 06:28:15,926 - logging in using static token
+2024-10-26 06:28:18,908 - Shard ID None has connected to Gateway (Session ID: 9ecb2091c704e8f0cf8297342d7de989).
+2024-10-26 06:43:20,901 - logging in using static token
+2024-10-26 06:43:22,673 - Shard ID None has connected to Gateway (Session ID: 3be2e78e18fbdee000fc3d04d4b716e5).
+2024-10-26 06:52:22,162 - logging in using static token
+2024-10-26 06:52:24,112 - Shard ID None has connected to Gateway (Session ID: 6dc2ea18a131da4974d79696755c66cb).
+2024-10-26 07:03:30,965 - logging in using static token
+2024-10-26 07:03:33,544 - Shard ID None has connected to Gateway (Session ID: 6553a4725bfd4cf6f66d35b0f35d6461).
+2024-10-26 12:54:13,421 - logging in using static token
+2024-10-26 12:54:15,146 - Shard ID None has connected to Gateway (Session ID: fce13e88dbe57950d03e9560e28a4929).
+2024-10-26 12:57:00,722 - logging in using static token
+2024-10-26 12:57:02,558 - Shard ID None has connected to Gateway (Session ID: 16e80939cd0040d6f3f1305d1ce7abb3).
+2024-10-26 12:57:49,038 - Ignoring exception in command 'textoverlay'
+Traceback (most recent call last):
+  File "C:\Users\Wolfz\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Wolfz\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\app_commands\commands.py", line 882, in _invoke_with_namespace
+    transformed_values = await self._transform_arguments(interaction, namespace)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Wolfz\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\app_commands\commands.py", line 846, in _transform_arguments
+    raise CommandSignatureMismatch(self) from None
+discord.app_commands.errors.CommandSignatureMismatch: The signature for command 'textoverlay' is different from the one provided by Discord. This can happen because either your code is out of date or you have not synced the commands with Discord, causing the mismatch in data. It is recommended to sync the command tree to fix this issue.
+2024-10-26 12:59:07,746 - logging in using static token
+2024-10-26 12:59:09,501 - Shard ID None has connected to Gateway (Session ID: 6c51f21f02677d4775fbd0595cb20d53).
+2024-10-26 13:02:57,602 - logging in using static token
+2024-10-26 13:02:59,427 - Shard ID None has connected to Gateway (Session ID: 5de5f9be8280988caf8ae5a1615936c0).
+2024-10-26 13:08:42,806 - logging in using static token
+2024-10-26 13:08:44,895 - Shard ID None has connected to Gateway (Session ID: 23e9c31e1909cfa9f5cfea678e074e64).
+2024-10-26 13:11:19,110 - Ignoring exception in command 'refresh'
+Traceback (most recent call last):
+  File "C:\Users\Wolfz\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Wolfz\OneDrive\Desktop\Codes\Discord Python\cogs\general.py", line 73, in refresh
+    await interaction.response.defer(ephemeral=True)
+  File "C:\Users\Wolfz\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\interactions.py", line 709, in defer
+    await adapter.create_interaction_response(
+  File "C:\Users\Wolfz\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\webhook\async_.py", line 221, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Wolfz\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Wolfz\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Wolfz\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'refresh' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2024-10-26 13:11:43,810 - Ignoring exception in command 'textoverlay'
+Traceback (most recent call last):
+  File "C:\Users\Wolfz\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Wolfz\OneDrive\Desktop\Codes\Discord Python\cogs\general.py", line 288, in textoverlay
+    await interaction.response.defer()
+  File "C:\Users\Wolfz\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\interactions.py", line 709, in defer
+    await adapter.create_interaction_response(
+  File "C:\Users\Wolfz\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\webhook\async_.py", line 221, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Wolfz\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Wolfz\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Wolfz\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'textoverlay' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2024-10-26 13:18:40,666 - logging in using static token
+2024-10-26 13:18:42,324 - Shard ID None has connected to Gateway (Session ID: e0124ccc34677f78b76040b10f45c569).
+2024-10-26 13:25:24,614 - Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "suicide" is not found
+2024-10-26 13:26:10,283 - Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "suicide" is not found
+2024-10-26 13:27:35,566 - Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "suicide" is not found
+2024-10-26 13:29:07,974 - Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "suicide" is not found
+2024-10-26 13:29:49,860 - Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "Ashoot" is not found
+2024-10-26 13:33:51,998 - logging in using static token
+2024-10-26 13:33:54,549 - Shard ID None has connected to Gateway (Session ID: 82d0a9c7d05833140e9d277c6b34a936).
+2024-10-26 13:37:19,115 - logging in using static token
+2024-10-26 13:37:20,864 - Shard ID None has connected to Gateway (Session ID: 3fa2234e7dbe82346e1da99550824799).
+2024-10-26 14:02:58,537 - Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "Ashoot" is not found
+2024-10-26 16:52:56,834 - logging in using static token
+2024-10-26 16:52:58,735 - Shard ID None has connected to Gateway (Session ID: 8a9e7b4184acbd6c7796947fb52a9817).
+2024-10-26 17:21:23,555 - Ignoring exception in command 'badapple'
+Traceback (most recent call last):
+  File "C:\Users\Wolfz\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Wolfz\OneDrive\Desktop\Codes\Discord Python\cogs\general.py", line 186, in bad_apple
+    await interaction.followup.send("Bad Apple playback completed!")
+  File "C:\Users\Wolfz\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\webhook\async_.py", line 1843, in send
+    data = await adapter.execute_webhook(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Wolfz\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\webhook\async_.py", line 223, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 50027): Invalid Webhook Token
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Wolfz\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Wolfz\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Wolfz\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'badapple' raised an exception: HTTPException: 401 Unauthorized (error code: 50027): Invalid Webhook Token
+2024-10-26 18:02:19,701 - Shard ID None session has been invalidated.
